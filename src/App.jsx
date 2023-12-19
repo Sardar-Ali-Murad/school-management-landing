@@ -1,9 +1,15 @@
 import React from "react";
 import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Contact from "./Contact";
 
 const App = () => {
+  let [open, setOpen] = React.useState(false);
   return (
     <div>
+      {open && <Contact open={open} setOpen={setOpen} />}
+      <ToastContainer />
       <div>
         <div id="navbar" className="navbar-area">
           <div className="desktop-nav">
@@ -19,7 +25,7 @@ const App = () => {
 
                 <div className="others-options ms-auto">
                   <ul className="d-flex align-items-center">
-                    <li>
+                    <li onClick={() => setOpen(true)}>
                       <a className="default-btn" href="#">
                         <i className="ri-registered-line"></i>
                         <span>Request a Demo</span>
@@ -53,7 +59,10 @@ const App = () => {
                     <span>limitless possibilities</span> in education.
                   </p>
                   <p>
-                    <button className="btn btn-outline-white">
+                    <button
+                      className="btn btn-outline-white"
+                      onClick={() => setOpen(true)}
+                    >
                       Request a Demo
                     </button>
                   </p>
@@ -820,7 +829,7 @@ const App = () => {
                   charge of your institute management experience, all from the
                   comfort of your own space.
                 </p>
-                <a className="default-btn" href="courses/index.htm">
+                <a className="default-btn" onClick={() => setOpen(true)}>
                   Request a Demo
                 </a>
               </div>
@@ -1167,7 +1176,7 @@ const App = () => {
                   firsthand.
                 </p>
                 <span>
-                  <a className="default-btn" href="#">
+                  <a className="default-btn" onClick={() => setOpen(true)}>
                     <span>Request a Demo</span>
                   </a>
                 </span>
