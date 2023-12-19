@@ -42,15 +42,15 @@ export default function Contact({ open, setOpen }) {
     ) {
       emailjs
         .sendForm(
-          "service_dnq3a7r",
-          "template_55loyxb",
+          "service_3jtfbpd",
+          "template_yx3l0xb",
           form.current,
-          "0Q_Cw_77BwGKK2tWn"
+          "Jm9n0eHHGlh-N7L58"
         )
         .then(
           (result) => {
             console.log(result.text);
-            dispatch(closeContactForm());
+            setOpen(false);
             toast.success(
               "Thank you for expressing interest in our product! We’re thrilled to provide you with a personalised demo. Our team will be in touch shortly to schedule a demonstration tailored to your needs. Stay tuned",
               {
