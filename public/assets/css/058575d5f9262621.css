@@ -31889,7 +31889,8 @@ textarea.form-control {
     background: linear-gradient(133.65deg, #6cc17e 2.24%, #098b99);
     border-radius: 3px;
     border-radius: 5px;
-    font-weight: 600
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .default-btn:before {

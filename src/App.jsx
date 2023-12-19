@@ -25,8 +25,8 @@ const App = () => {
 
                 <div className="others-options ms-auto">
                   <ul className="d-flex align-items-center">
-                    <li onClick={() => setOpen(true)}>
-                      <a className="default-btn" href="#">
+                    <li onClick={() => setOpen(true)} style={{cursor:"pointer"}}>
+                      <a className="default-btn">
                         <i className="ri-registered-line"></i>
                         <span>Request a Demo</span>
                       </a>
@@ -62,6 +62,7 @@ const App = () => {
                     <button
                       className="btn btn-outline-white"
                       onClick={() => setOpen(true)}
+                      style={{cursor:"pointer"}}
                     >
                       Request a Demo
                     </button>
@@ -829,7 +830,7 @@ const App = () => {
                   charge of your institute management experience, all from the
                   comfort of your own space.
                 </p>
-                <a className="default-btn" onClick={() => setOpen(true)}>
+                <a className="default-btn" onClick={() => setOpen(true)} style={{cursor:"pointer"}}>
                   Request a Demo
                 </a>
               </div>
@@ -1176,7 +1177,7 @@ const App = () => {
                   firsthand.
                 </p>
                 <span>
-                  <a className="default-btn" onClick={() => setOpen(true)}>
+                  <a className="default-btn" onClick={() => setOpen(true)} style={{cursor:"pointer"}}>
                     <span>Request a Demo</span>
                   </a>
                 </span>
