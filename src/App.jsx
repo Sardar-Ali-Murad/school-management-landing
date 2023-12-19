@@ -6,6 +6,11 @@ import Contact from "./Contact";
 
 const App = () => {
   let [open, setOpen] = React.useState(false);
+  React.useEffect(() => {
+    window.AOS.init({ // Initialization
+      duration: 2000
+    });
+  });
   return (
     <div>
       {open && <Contact open={open} setOpen={setOpen} />}
