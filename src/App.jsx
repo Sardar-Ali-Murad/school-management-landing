@@ -20,7 +20,7 @@ const App = () => {
           <div className="desktop-nav">
             <div className="container-fluid">
               <div className="navbar navbar-expand-md navbar-light">
-                <a className="navbar-brand" href="index.htm">
+                <a className="navbar-brand" href="index.html" rel="Canonical">
                   <img
                     src="images/log.png"
                     style={{ width: "350px" }}
